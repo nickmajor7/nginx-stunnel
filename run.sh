@@ -1,7 +1,8 @@
-cnd="docker run -name=nginx =d \
+
+cmd="docker run --name=nginx -d \
     -p 1935:1935 \
     -p 19350:19350 \
-    -v option.txt:/opt/app/option.txt \
-    nginx/stuneel:latest"
+    --mount type=bind,src=$PWD/option.txt,dst=/opt/app/option.txt \
+    nginx/stunnel:latest"
 echo $cmd
 eval $cmd

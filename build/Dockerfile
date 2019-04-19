@@ -6,9 +6,9 @@ ENV NGINX_RTMP_MODULE_VERSION 1.2.1
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y ca-certificates openssl libssl-dev stuneel vim&& \
+    apt-get install -y ca-certificates openssl libssl-dev stunnel vim&& \
     rm -rf /var/lib/apt/lists/* &&\
-    mkdir -p /etc/stuneel/conf.d/
+    mkdir -p /etc/stunnel/conf.d/
 
 # Download and decompress Nginx
 RUN mkdir -p /tmp/build/nginx && \
@@ -47,9 +47,9 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
 
 # Set up config file
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY fb.conf /etc/stunnel/conf.d/fb.conf
-COPY stunnel4 /etc/default/stunnel4
+COPY conf/nginx.conf /etc/nginx/nginx.conf
+COPY conf/fb.conf /etc/stunnel/conf.d/fb.conf
+COPY conf/stunnel4 /etc/default/stunnel4
 
 WORKDIR /opt/app/
 
