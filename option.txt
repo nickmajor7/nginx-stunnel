@@ -1,2 +1,1 @@
-#push rtmp://127.0.0.1:19350/rtmp/10213064090669892?s_sw=0&s_vt=api-s&a=AbyaZQJ-aayGWDGW;
-push rtmp://127.0.0.1:19350/rtmp/2651072361575171?s_sw=0&s_vt=api-s&a=Abz_lCggZ1CWDRkE;
+push rtmp://127.0.0.1:19350/rtmp/2651293661553041?s_sw=0&s_vt=api-s&a=Abz1Q8AqUhurQeS0;

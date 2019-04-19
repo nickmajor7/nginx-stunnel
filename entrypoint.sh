@@ -1,2 +1,2 @@
-/etc/init.d/stunnel start
+/etc/init.d/stunnel4 start
 nginx -g "daemon off;"

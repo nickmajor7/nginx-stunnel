@@ -50,6 +50,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 COPY conf/fb.conf /etc/stunnel/conf.d/fb.conf
 COPY conf/stunnel4 /etc/default/stunnel4
+COPY conf/stunnel.conf /etc/stunnel/stunnel.conf 
 
 WORKDIR /opt/app/
 
