@@ -12,4 +12,6 @@
 ./run.sh
 ```
 
-
+# Live stream
+1. open OBS
+2. set to "rtmp://127.0.0.1/live/"
